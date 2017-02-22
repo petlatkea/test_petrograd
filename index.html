@@ -82,14 +82,15 @@
            <!-- indsæt produkt_template kloner her -->
 
             <template id="produkt_template">
-            <div class="col-sm-4 col-lg-4 col-md-4">
-                <a href="#"> <img class="img-responsive" src="imgs/small/rodbede-cabanossi-sm.jpg" alt=""> </a>
-                <h3>Cabanossi med rødbedecreme og løg</h3>
+            <div class="col-sm-4 col-lg-4 col-md-4 produkt">
+                <a href="#"> <img class="img-responsive data_billede" src="imgs/small/rodbede-cabanossi-sm.jpg" alt=""> </a>
+                <h3 class="data_navn">DATA_NAVN</h3>
 
-                <h4 class="pris">Pris: 49,-</h4> <!-- TODO: Tilføj class udsolgt, hvis udsolgt
+                <h4 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4> <!-- TODO: Tilføj class udsolgt, hvis udsolgt
                 eller class rabat, hvis rabat -->
                 <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4> <!-- Kun hvis udsolgt -->
-                <h4 class="rabatpris">Pris: 31,-</h4> <!-- kun hvis rabat -->
+                <h4 class="rabatpris">Pris: <span class="data_rabatpris">
+                DATA_RABATPRIS</span>,-</h4> <!-- kun hvis rabat -->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalforret1">Se detaljer<span class="glyphicon glyphicon-chevron-right"></span></button>
             </div>
             </template>
